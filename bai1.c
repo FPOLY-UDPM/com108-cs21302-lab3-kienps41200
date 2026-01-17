@@ -1,6 +1,6 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
+ * Họ và tên: nguyễn ngọc trung kiên
+ * MSSV:      [ps41200]
  * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
  *****************************************************************************/
 
@@ -17,15 +17,34 @@
 
 #include <stdio.h>
 
-int main(){
+int main() {
+    float diem;
 
-    // Khai báo biến
+    printf("Nhap diem trung binh: ");
+    scanf("%f", &diem);
 
-
-    // Nhập dữ liệu
-
-
-    // Xử lý, tính toán VÀ Hiển thị kết quả
+    // Kiểm tra điểm hợp lệ
+    if (diem < 0 || diem > 10) {
+        printf("Diem KHONG hop le!\n");
+    } 
+    else if (diem >= 9) {
+        printf("Hoc luc: Xuat sac\n");
+    } 
+    else if (diem >= 8) {
+        printf("Hoc luc: Gioi\n");
+    } 
+    else if (diem >= 6.5) {
+        printf("Hoc luc: Kha\n");
+    } 
+    else if (diem >= 5) {
+        printf("Hoc luc: Trung binh\n");
+    } 
+    else if (diem >= 3.5) {
+        printf("Hoc luc: Yeu\n");
+    } 
+    else {
+        printf("Hoc luc: Kem\n");
+    }
 
     return 0;
 }
